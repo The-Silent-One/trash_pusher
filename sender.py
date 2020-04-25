@@ -17,11 +17,12 @@ with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
     msg["From"] = sender
     msg["To"] = receiver
     html = """
-    <html><body><p>
-    This is a friendly reminder to log in linux so that it can automaticaly push to git
+    <html><body><h2>
+    This is a friendly reminder to log in linux so that it can automaticaly push to 
+    <a href="https://github.com/The-Silent-One/trash_pusher">git</a>
     <br><br>
     Pushing for letter
-    </p></body></html>"""
+    </h2></body></html>"""
     
     part = MIMEText(html, "html")
     
