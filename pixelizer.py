@@ -362,8 +362,11 @@ def visualize(win,pixel):
         sleep(3/speed)
         destroy(b)
         
+def build_characters():
+    pixel = char_converter()
+    pixel = normalize(pixel)
+    pixel[" "] = [[0], [0], [0], [0], [0], [0], [0]]
+    return pixel
 
-win = build()
-pixel = char_converter()
-pixel = normalize(pixel)
-visualize(win,pixel)
+#win = build()
+#visualize(win,pixel)
