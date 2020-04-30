@@ -8,5 +8,3 @@ def send():
     system("git add history.txt")
     system('git commit -m "automatic'+ctime()+'"')
     system("git push")
-
-send()
