@@ -14,7 +14,7 @@ context = ssl.create_default_context()
 def send(subject,task):
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
         msg = MIMEMultipart("alternative")
-        msg["subject"] = "[TrashPusher] Automatic reminder"+subject
+        msg["subject"] = "[TrashPusher] Automatic reminder "+subject
         msg["From"] = sender
         msg["To"] = receiver
         html = """

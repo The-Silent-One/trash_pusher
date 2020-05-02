@@ -2,6 +2,7 @@ from os import system
 from time import ctime
 from planner import *
 from sender import *
+import calendar
 
 def daysAction():
     p = import_push_calendar()
@@ -16,6 +17,6 @@ def daysAction():
     
     ##next push
     day = next_push(p)
-    send("next is ["+day+"]","next day to push is"+day+"\nBe sure to connect that day")
-    
+    send("next is ["+day+"]","next day to push is "+day+"<br>Be sure to connect that day")
+
 daysAction()
