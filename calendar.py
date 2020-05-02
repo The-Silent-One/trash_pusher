@@ -42,6 +42,6 @@ def create_app():
     cal = Calendar()
     cal.show()
     
-    sys.exit(app.exec_())
+    #sys.exit(app.exec_())
     
 create_app()
