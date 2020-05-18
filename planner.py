@@ -32,7 +32,7 @@ def create_push_calendar(start_t, letter_list):
     return [i*oneday + start_t for i in range(len(letter_list)) if letter_list[i]]
     
 def check_today(push_calendar):
-    return datetime.date.today() in push_calendar
+    return datetime.date.today().__str__() in push_calendar
 
 def next_push(push_calendar):
     day = datetime.date.today()
