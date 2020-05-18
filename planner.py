@@ -55,10 +55,9 @@ def import_push_calendar():
 
 def create_file(sentance):
     word = word_to_letter_list(preprocess(sentance))
-    print(a)
+    print(word)
     t = set_time_start()
     print(t)
     p = create_push_calendar(t,word)
     print(p)
     export_push_calendar(p)
-    
