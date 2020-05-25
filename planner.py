@@ -37,8 +37,9 @@ def check_today(push_calendar):
 def next_push(push_calendar):
     day = datetime.date.today()
     oneday = datetime.timedelta(days=1)
+    day = day + oneday
     while day.__str__() not in push_calendar:
-        day = day+oneday
+        day = day + oneday
     return day.__str__()
 
 def export_push_calendar(push_calendar):
